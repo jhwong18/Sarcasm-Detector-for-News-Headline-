@@ -1,5 +1,5 @@
 # Sarcasm Detector for News Headline
-
+kaggle link: https://www.kaggle.com/jinghuiwong/lstm-cnn-with-tensorflow-lda-topic-modelling
 
 # Objective 
 
