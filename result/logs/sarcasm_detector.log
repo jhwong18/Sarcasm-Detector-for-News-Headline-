@@ -1,0 +1,45 @@
+2020-08-02 17:32:34,177 INFO data/Sarcasm_Headlines_Dataset.json dataset loaded
+2020-08-02 17:32:34,180 INFO 26709 columns with valid headlines
+2020-08-02 17:32:34,182 INFO 0 columns with empty headlines
+2020-08-02 17:32:34,183 INFO 26709 columns with valid target values
+2020-08-02 17:32:34,184 INFO 0 columns with empty target values
+2020-08-02 17:32:34,185 INFO Starting data processing...
+2020-08-02 17:32:34,411 INFO Data processing completed
+2020-08-02 17:32:34,746 INFO Plot saved as Frequencies of headlines on Sarcastic and Non-sarcastic Headlines.png in results/visualization folder
+2020-08-02 17:32:36,597 INFO Plot saved as Proportion of headlines on Sarcastic and Non-sarcastic Headlines.png in results/visualization folder
+2020-08-02 17:32:37,518 INFO Plot saved as Frequencies of headline on Different lengths of headline.png in results/visualization folder
+2020-08-02 17:32:38,323 INFO Plot saved as Frequencies of sarcastic headline on Different lengths of sarcastic headline.png in results/visualization folder
+2020-08-02 17:32:39,153 INFO Plot saved as Frequencies of non-sarcastic headline on Different lengths of non-sarcastic headline.png in results/visualization folder
+2020-08-02 17:32:49,522 INFO data/Sarcasm_Headlines_Dataset.json dataset loaded
+2020-08-02 17:32:49,526 INFO 26709 columns with valid headlines
+2020-08-02 17:32:49,530 INFO 0 columns with empty headlines
+2020-08-02 17:32:49,531 INFO 26709 columns with valid target values
+2020-08-02 17:32:49,532 INFO 0 columns with empty target values
+2020-08-02 17:32:49,532 INFO Starting data processing...
+2020-08-02 17:32:49,739 INFO Data processing completed
+2020-08-02 17:32:49,739 INFO Data processing for RNN models...
+2020-08-02 17:32:50,629 INFO Data processing for RNN models completed
+2020-08-02 17:32:50,632 INFO Training CNN-LSTM model ..
+2020-08-02 17:35:06,495 INFO CNN-LSTM model training completed
+2020-08-02 17:35:06,701 INFO Plot saved as accuracy on Epochs.png in result/visualization folder
+2020-08-02 17:35:10,620 INFO Plot saved as loss on Epochs.png in result/visualization folder
+2020-08-02 17:36:17,564 INFO data/Sarcasm_Headlines_Dataset.json dataset loaded
+2020-08-02 17:36:17,568 INFO 26709 columns with valid headlines
+2020-08-02 17:36:17,571 INFO 0 columns with empty headlines
+2020-08-02 17:36:17,571 INFO 26709 columns with valid target values
+2020-08-02 17:36:17,572 INFO 0 columns with empty target values
+2020-08-02 17:36:17,572 INFO Starting data processing...
+2020-08-02 17:36:17,804 INFO Data processing completed
+2020-08-02 17:36:18,733 INFO Starting data processing for LDA...
+2020-08-02 17:36:18,733 INFO Starting to tokenize dataset...
+2020-08-02 17:36:25,308 INFO Tokens created from dataset
+2020-08-02 17:36:25,309 INFO Starting to convert headlines into corpus and dictionary...
+2020-08-02 17:36:25,809 INFO Corpus and dictionary created from dataset
+2020-08-02 17:36:25,859 INFO Corpus saved as corpus.pkl in visualization folder
+2020-08-02 17:36:25,867 INFO Dictionary saved as dictionary.gensim in visualization folder
+2020-08-02 17:37:35,661 INFO LDA Model saved as visualization/3_Topic.gensim in visualization folder
+2020-08-02 17:37:35,661 INFO -----------------
+2020-08-02 17:37:35,662 INFO Results for LDA model with 3 (top 5 words in each topic):
+2020-08-02 17:37:35,667 INFO -----------------
+2020-08-02 17:37:35,668 INFO [(0, '0.030*"trump" + 0.010*"woman" + 0.009*"american" + 0.009*"donald" + 0.006*"clinton"'), (1, '0.006*"child" + 0.006*"state" + 0.005*"death" + 0.005*"police" + 0.004*"house"'), (2, '0.006*"world" + 0.005*"america" + 0.005*"report" + 0.005*"really" + 0.005*"nation"')]
+2020-08-02 17:43:57,242 INFO LDA Model Visualization saved as visualization/lda_3_Topic.html in visualization folder

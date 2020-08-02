@@ -1,0 +1,61 @@
+#===================================
+# LDA Params
+#===================================
+NUM_TOPICS: 3
+
+#===================================
+# Choose Model for Prediction
+#===================================
+# model options 'GRU', 'LSTM', 'CNN', 'CNN_LSTM'
+model: CNN_LSTM
+
+#===================================
+# NLP Processing Params
+#===================================
+# limit vector of words to the top 10,000 words
+vocab_size: 10000
+embedding_dim: 16
+max_length: 120
+trunc_type: 'post'
+oov_tok: "<OOV>"
+
+
+#===================================
+# General Params for RNN
+#===================================
+num_epochs: 3
+batch_size: 32
+
+dense_units: 100
+dropout_rate: 0.4
+regularizer_rate: 0.003
+activation: 'relu'
+
+loss: 'binary_crossentropy'
+optimizer: 'adam'
+metrics: ['accuracy']
+
+#===================================
+# GRU Model Params
+#===================================
+gru_units: 32
+
+
+#===================================
+# LSTM Model Params
+#===================================
+lstm_units: 32
+
+#===================================
+# CNN (Conv1D) Model Params
+#===================================
+filters: 128
+kernel_size: 5
+
+
+#===================================
+# CNN_LSTM Model Params
+#===================================
+cnn_lstm_filters: 128
+cnn_lstm_kernel_size: 1
+cnn_lstm_units: 32

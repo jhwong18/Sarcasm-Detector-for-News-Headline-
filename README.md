@@ -1,6 +1,19 @@
 # Sarcasm Detector for News Headline
 kaggle link: https://www.kaggle.com/jinghuiwong/lstm-cnn-with-tensorflow-lda-topic-modelling
 
+
+# Requirements
+* Tensorflow 2.0
+* pandas
+* numpy
+* scikit-learn 0.21.3
+* matplotlib
+* nltk 3.4.5
+* spacy 2.2.3
+* pyLDAvis 2.1.2
+* gensim 3.8.1
+
+
 # Objective 
 
 Given the rise of fake news on social media as well as on news outlets, it is important for people to identify sarcastic news reports from legitimate news reports. This will allow people to know when to take the news at face value and not spread false rumours. Given a news headline, predict whether a news headline is a sarcastic remark or not. In this repository, the following unsupervised and supervised learning methods are used: Latent Dirichlet Allocation for topic extraction, Deep Learning models (RNN with GRU, RNN with LSTM, CNN and finally a neural network architecture that combines both CNN and RNN). To ensure the robustness and to stabilize the performance of deep learning methods, techniques such as batch normalization, dropout layers and regularization are also used. 
@@ -29,6 +42,101 @@ Each record consists of three attributes:
 
 `article_link`: link to the original news article. Useful in collecting supplementary data
 
+# Using the Package
+
+## Makefile
+
+To run the package using `Makefile`, simply run the following commands below:
+
+```
+# To install the required modules and setup.py
+make setup
+
+# To create visualization plots. Plots are saved in results folder
+make visualize
+
+# To perform LDA. Interactive visualization is saved in results folder
+make lda
+
+# To run the RNN deep learning models
+make run-model
+
+# To run pytest on the package
+make test
+```
+
+## Using Shellscript
+
+To run the package as shellscript, simply click on the file `run.sh`
+
+## Using Click
+
+To run the package on cmd, simply run the following commands below:
+
+```
+python setup.py sdist
+pip install dist/sarcasm_detector_news_headline-0.1.0.tar.gz
+
+# To install the required modules and setup.py
+sarcasm_detector_news_headline visualize
+
+# To perform LDA. Interactive visualization is saved in results folder
+sarcasm_detector_news_headline lda
+
+# To run the RNN deep learning models
+sarcasm_detector_news_headline run-model
+```
+
+# Parameters for RNN Models
+
+The parameters for the RNN Models is found in `config.yaml`. Edit the parameter `model` to select which model to run.
+
+## Convolutional (Conv1D) Model Parameters
+* num_epochs
+* batch_size
+* dense_units
+* dropout_rate
+* regularizer_rate
+* activation
+* loss
+* optimizer
+* filters
+* kernel_size
+
+## Gated Recurrent Unit (GRU) Model Parameters
+* num_epochs
+* batch_size
+* dense_units
+* dropout_rate
+* regularizer_rate
+* activation
+* loss
+* optimizer
+* gru_units
+
+## Long Short Term Memory (LSTM) Model Parameters
+* num_epochs
+* batch_size
+* dense_units
+* dropout_rate
+* regularizer_rate
+* activation
+* loss
+* optimizer
+* lstm_units
+
+## Long Short Term Memory (LSTM) Model Parameters
+* num_epochs
+* batch_size
+* dense_units
+* dropout_rate
+* regularizer_rate
+* activation
+* loss
+* optimizer
+* cnn_lstm_filters
+* cnn_lstm_kernel_size
+* cnn_lstm_units
 
 # References:
 [1] Using LDA for topic extraction: https://towardsdatascience.com/the-complete-guide-for-topics-extraction-in-python-a6aaa6cedbbc
